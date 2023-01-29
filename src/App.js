@@ -2,15 +2,18 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import CharsGrid from "./components/CharsGrid";
 import axios from "axios";
+import SearchBar from "./components/SearchBar";
 
 function App() {
   const [chars, setChars] = useState([]);
-
+  const [searchChar, setSearchChar] = useState("");
   const [page, setPage] = useState(1);
 
   useEffect(() => {
     axios
-      .get(`https://rickandmortyapi.com/api/character?page=${page}`)
+      .get(
+        `https://rickandmortyapi.com/api/character?page=${page}&name=${searchChar}`
+      )
       .then((response) => {
         const chars = response.data.results;
         const info = response.data.info;
@@ -25,7 +28,7 @@ function App() {
           ? (document.getElementById("btnNext").style.display = "none")
           : (document.getElementById("btnNext").style.display = "block");
       });
-  }, [page]);
+  }, [page, searchChar]);
 
   function handleNextPage() {
     const currentPage = page + 1;
@@ -41,6 +44,7 @@ function App() {
   return (
     <div className="App">
       <h1>The Rick and Morty API</h1>
+      <SearchBar setSearchChar={setSearchChar} setPage={setPage}></SearchBar>
       <CharsGrid chars={chars}></CharsGrid>
       <div className="my-5 flex">
         <button
