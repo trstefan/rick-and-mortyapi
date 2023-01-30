@@ -3,16 +3,20 @@ import { useEffect, useState } from "react";
 import CharsGrid from "./components/CharsGrid";
 import axios from "axios";
 import SearchBar from "./components/SearchBar";
+import Filter from "./components/Filter/Filter";
 
 function App() {
   const [chars, setChars] = useState([]);
-  const [searchChar, setSearchChar] = useState("");
   const [page, setPage] = useState(1);
+  const [searchChar, setSearchChar] = useState("");
+  const [status, setStatus] = useState("");
+  const [gender, setGender] = useState("");
+  const [species, setSpecies] = useState("");
 
   useEffect(() => {
     axios
       .get(
-        `https://rickandmortyapi.com/api/character?page=${page}&name=${searchChar}`
+        `https://rickandmortyapi.com/api/character?page=${page}&name=${searchChar}&status=${status}&gender=${gender}&species=${species}`
       )
       .then((response) => {
         const chars = response.data.results;
@@ -28,7 +32,7 @@ function App() {
           ? (document.getElementById("btnNext").style.display = "none")
           : (document.getElementById("btnNext").style.display = "block");
       });
-  }, [page, searchChar]);
+  }, [page, searchChar, status, gender, species]);
 
   function handleNextPage() {
     const currentPage = page + 1;
@@ -45,6 +49,12 @@ function App() {
     <div className="App">
       <h1>The Rick and Morty API</h1>
       <SearchBar setSearchChar={setSearchChar} setPage={setPage}></SearchBar>
+      <Filter
+        setStatus={setStatus}
+        setGender={setGender}
+        setSpecies={setSpecies}
+        setPage={setPage}
+      ></Filter>
       <CharsGrid chars={chars}></CharsGrid>
       <div className="my-5 flex">
         <button
