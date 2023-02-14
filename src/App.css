@@ -8,7 +8,6 @@
 .chars-grid {
   width: 80%;
   display: grid;
-  margin-top: 1rem;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
@@ -31,16 +30,27 @@ h1 {
   }
 }
 
-/*
-.card {
-  background-color: coral;
-  display: flex;
-  gap: 1rem;
-  border-radius: 1rem;
+.search {
+  background-color: black;
+  margin-bottom: 1rem;
 }
 
-.card-img img {
-  height: 100px;
-  width: 100px;
+input {
+  display: block;
+  background-color: grey;
+  color: aliceblue;
+  height: 32px;
+  padding: 5px 10px;
+  text-align: center;
 }
-*/
+
+input:focus {
+  outline: none;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+
+input::placeholder {
+  color: aliceblue;
+}

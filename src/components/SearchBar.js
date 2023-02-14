@@ -2,7 +2,7 @@ import React from "react";
 
 const SearchBar = ({ setSearchChar, setPage }) => {
   return (
-    <div>
+    <div className="search">
       <form action="">
         <input
           type="text"

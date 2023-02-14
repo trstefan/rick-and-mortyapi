@@ -48,14 +48,17 @@ function App() {
   return (
     <div className="App">
       <h1>The Rick and Morty API</h1>
-      <SearchBar setSearchChar={setSearchChar} setPage={setPage}></SearchBar>
-      <Filter
-        setStatus={setStatus}
-        setGender={setGender}
-        setSpecies={setSpecies}
-        setPage={setPage}
-      ></Filter>
-      <CharsGrid chars={chars}></CharsGrid>
+      <SearchBar setSearchChar={setSearchChar} setPage={setPage} />
+      <div className="flex flex-row gap-x-8 justify-center items-start">
+        <Filter
+          setStatus={setStatus}
+          setGender={setGender}
+          setSpecies={setSpecies}
+          setPage={setPage}
+        ></Filter>
+        <CharsGrid chars={chars}></CharsGrid>
+      </div>
+
       <div className="my-5 flex">
         <button
           className="bg-blue-500 disabled hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-4 "

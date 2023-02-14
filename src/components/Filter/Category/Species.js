@@ -15,8 +15,8 @@ const Species = ({ setSpecies, setPage }) => {
     "Cronenberg",
   ];
   return (
-    <div>
-      {" "}
+    <div className="bg-yellow-700 mt-4 py-2 px-1">
+      <p className="font-bold"> Species</p>
       {species.map((item, index) => (
         <FilterButton
           className="g-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"

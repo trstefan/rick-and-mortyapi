@@ -4,10 +4,11 @@ import FilterButton from "../FilterButton";
 const Gender = ({ setGender, setPage }) => {
   let genders = ["Female", "Male", "Enderless", "Unknown"];
   return (
-    <div>
+    <div className="bg-red-700  mt-4 py-2 px-1">
+      <p className="font-bold"> Gender</p>
       {genders.map((item, index) => (
         <FilterButton
-          className="g-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          className="g-blue-500 hover:bg-lime-700	 text-white font-bold py-2 px-4 rounded"
           key={index}
           index={index}
           name="gender"

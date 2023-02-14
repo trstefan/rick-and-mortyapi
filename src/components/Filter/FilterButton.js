@@ -4,7 +4,7 @@ const FilterButton = ({ name, index, input, task, setPage }) => {
       <style jsx="true">
         {`
           .x:checked + label {
-            background-color: #0b5ed7;
+            background-color: blue;
             color: white;
           }
           input[type="radio"] {
@@ -14,7 +14,7 @@ const FilterButton = ({ name, index, input, task, setPage }) => {
       </style>{" "}
       <div className="form-check">
         <input
-          className="form-check-input x"
+          className="form-check-input x mb-5"
           type="radio"
           name={name}
           id={`${name}-${index}`}
@@ -25,7 +25,7 @@ const FilterButton = ({ name, index, input, task, setPage }) => {
             setPage(1);
             //console.log("works");
           }}
-          className="btn btn-outline-primary"
+          className="btn btn-outline-primary font-bold bg-white text-center rounded-lg px-2"
           htmlFor={`${name}-${index}`}
         >
           {input}
