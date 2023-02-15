@@ -2,11 +2,10 @@ import React from "react";
 
 const CharCard = ({ char }) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg">
+    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
       <img className="w-full" src={char.image} alt="" />
 
       <div className="px-6 py-4">
-        {" "}
         {(() => {
           if (char.status === "Alive") {
             return (

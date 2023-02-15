@@ -1,6 +1,7 @@
 # Rick and Morty App - ReactJS
 
-## :link:	Live Demo 
+## :link: Live Demo
+
 [Demo Link](https://rick-and-mortyapi.vercel.app/)
 
 ## 📷 Screenshot
@@ -24,13 +25,13 @@ The Rick and Morty project allows users to view the list Rick and Morty characte
 - [x] Fetch characters
 - [x] Add search bar
 - [x] Add filters
-    - [x] Status
-    - [x] Gender
-    - [x] Species
-- [ ] Fetch episodes + characters
-- [ ] Fetch location + characters
-    
-## :runner: Run Locally 
+  - [x] Status
+  - [x] Gender
+  - [x] Species
+- [x] Fetch episodes + characters
+- [x] Fetch location + characters
+
+## :runner: Run Locally
 
 Clone the project
 
@@ -56,6 +57,7 @@ Start the server
   npm run start
 ```
 
-## :star:	Acknowledgements
+## :star: Acknowledgements
+
 - [The Rick and Morty API](https://rickandmortyapi.com/)
 - [Axios](https://www.npmjs.com/package/axios)

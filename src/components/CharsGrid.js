@@ -4,7 +4,7 @@ import CharCard from "./CharCard";
 const CharsGrid = ({ chars }) => {
   // console.log(chars);
   return (
-    <section className="chars-grid">
+    <section className="grid grid-col-1 justify-center gap-2 bg-red-500 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 p-5 rounded-lg">
       {chars.map((char) => (
         <CharCard key={char.id} char={char}></CharCard>
       ))}

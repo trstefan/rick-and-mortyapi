@@ -15,7 +15,7 @@ const Species = ({ setSpecies, setPage }) => {
     "Cronenberg",
   ];
   return (
-    <div className="bg-yellow-700 mt-4 py-2 px-1">
+    <div className="bg-yellow-700 mt-4 py-2 px-1 rounded-lg">
       <p className="font-bold"> Species</p>
       {species.map((item, index) => (
         <FilterButton

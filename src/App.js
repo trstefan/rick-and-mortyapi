@@ -4,8 +4,21 @@ import CharsGrid from "./components/CharsGrid";
 import axios from "axios";
 import SearchBar from "./components/SearchBar";
 import Filter from "./components/Filter/Filter";
+import { Routes, Route } from "react-router-dom";
+import { Locations } from "./Pages/Locations/Locations";
+import { Episodes } from "./Pages/Episodes/Episodes";
 
 function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/episodes" element={<Episodes />} />
+      <Route path="/locations" element={<Locations />} />
+    </Routes>
+  );
+}
+
+const Home = () => {
   const [chars, setChars] = useState([]);
   const [page, setPage] = useState(1);
   const [searchChar, setSearchChar] = useState("");
@@ -46,10 +59,12 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <h1>The Rick and Morty API</h1>
-      <SearchBar setSearchChar={setSearchChar} setPage={setPage} />
-      <div className="flex flex-row gap-x-8 justify-center items-start">
+    <div className="flex flex-col justify-center	">
+      <h1 className="text-center my-4 text-red-600">The Rick and Morty API</h1>
+      <div className="flex text-center justify-center mb-5">
+        <SearchBar setSearchChar={setSearchChar} setPage={setPage} />
+      </div>
+      <div className="flex flex-column gap-x-8 justify-center items-start px-4 ">
         <Filter
           setStatus={setStatus}
           setGender={setGender}
@@ -78,6 +93,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;

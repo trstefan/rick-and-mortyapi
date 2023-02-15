@@ -11,7 +11,7 @@ const Filter = ({ setStatus, setGender, setSpecies, setPage }) => {
   }
   return (
     <div className="flex flex-col ">
-      <div className="flex items-center gap-x-5 bg-green-700 p-2">
+      <div className="flex items-center gap-x-5 bg-green-700 p-2 rounded-lg">
         <p className="font-bold text-lg">Filters</p>
         <button
           className="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
