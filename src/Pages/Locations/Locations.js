@@ -2,11 +2,12 @@ import React from "react";
 import { useEffect, useState } from "react";
 import CharsGrid from "../../components/CharsGrid";
 import InputGroup from "../../components/Filter/Category/InputGroup";
+import { Header } from "../../components/Header";
 
 export const Locations = () => {
   let [results, setResults] = React.useState([]);
   let [info, setInfo] = useState([]);
-  let { air_date, episode, name } = info;
+
   let [number, setNumber] = useState(1);
 
   let api = `https://rickandmortyapi.com/api/location/${number}`;
@@ -28,6 +29,7 @@ export const Locations = () => {
   }, [api]);
   return (
     <div className="flex flex-col">
+      <Header />
       <div className="text-center my-6">
         <h1>{info.name}</h1>
         <h3 className="font-medium">{info.dimension}</h3>
