@@ -6,8 +6,24 @@
 
 ## 📷 Screenshot
 
+### Home Page
 <p>
   <img alt="screenshot" width="100%" src="./src/screenshots/Home.png" />
+</p>
+
+### Characters Page
+<p>
+  <img alt="screenshot" width="100%" src="./src/screenshots/Characters.png" />
+</p>
+
+### Episodes Page
+<p>
+  <img alt="screenshot" width="100%" src="./src/screenshots/Episodes.png" />
+</p>
+
+### Locations Page
+<p>
+  <img alt="screenshot" width="100%" src="./src/screenshots/Locations.png" />
 </p>
 
 ## 📝 Project Description
