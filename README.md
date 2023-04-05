@@ -52,13 +52,13 @@ The Rick and Morty project allows users to view the list Rick and Morty characte
 Clone the project
 
 ```bash
-  git clone https://github.com/trstefan/starwars-wiki.git
+  git clone https://github.com/trstefan/rick-and-mortyapi
 ```
 
 Go to the project directory
 
 ```bash
-  cd starwars-wiki
+  cd rick-and-mortyapi
 ```
 
 Install dependencies
