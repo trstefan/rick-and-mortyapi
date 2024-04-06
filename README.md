@@ -10,6 +10,7 @@ This project is a React.js web app that displays details of characters from the 
 
 ## 📷 Screenshot
 
+<<<<<<< HEAD
 <div>
 
 #### Old Home Page
@@ -42,6 +43,29 @@ This project is a React.js web app that displays details of characters from the 
 
   <img alt="new episodes page" width="100%" src="./src/screenshots/EpisodesNew.png" />
 </div>
+=======
+### Home Page
+<p>
+  <img alt="screenshot" width="100%" src="./src/screenshots/Home.png" />
+</p>
+
+### Characters Page
+<p>
+  <img alt="screenshot" width="100%" src="./src/screenshots/Characters.png" />
+</p>
+
+### Episodes Page
+<p>
+  <img alt="screenshot" width="100%" src="./src/screenshots/Episodes.png" />
+</p>
+
+### Locations Page
+<p>
+  <img alt="screenshot" width="100%" src="./src/screenshots/Locations.png" />
+</p>
+
+## 📝 Project Description
+>>>>>>> 9452229828c3640f1370349249b839ad98e85733
 
 </div>
 
