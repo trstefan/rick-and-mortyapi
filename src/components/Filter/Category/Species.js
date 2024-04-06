@@ -15,19 +15,21 @@ const Species = ({ setSpecies, setPage }) => {
     "Cronenberg",
   ];
   return (
-    <div className="bg-yellow-700 mt-4 py-2 px-1 rounded-lg">
-      <p className="font-bold"> Species</p>
-      {species.map((item, index) => (
-        <FilterButton
-          className="g-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-          key={index}
-          index={index}
-          name="species"
-          input={item}
-          task={setSpecies}
-          setPage={setPage}
-        ></FilterButton>
-      ))}
+    <div className="bg-[#F3F4F6] mt-4 py-2 px-1 rounded-lg  flex flex-col gap-[1.5rem]">
+      <div className="text-base">Species</div>
+      <div className="flex flex-col gap-[1.2rem]">
+        {" "}
+        {species.map((item, index) => (
+          <FilterButton
+            key={index}
+            index={index}
+            name="species"
+            input={item}
+            task={setSpecies}
+            setPage={setPage}
+          ></FilterButton>
+        ))}{" "}
+      </div>
     </div>
   );
 };

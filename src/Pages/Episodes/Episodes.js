@@ -34,7 +34,7 @@ export const Episodes = () => {
           {info.episode} - {info.air_date}
         </h3>
       </div>
-      <div className="grid gap-[1rem] sm:grid-cols-[.5fr_1.5fr] justify-center">
+      <div className="h-full">
         <InputGroup name="Episode" changeID={setID} total={51} />
         <CharsGrid chars={results}></CharsGrid>
       </div>

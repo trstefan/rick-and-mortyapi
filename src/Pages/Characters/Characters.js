@@ -46,12 +46,12 @@ export const Characters = () => {
   }
 
   return (
-    <div className="flex flex-col justify-center	">
+    <div className="flex flex-col justify-center ">
       <Header />
-      <div className="flex text-center justify-center mb-5 w-full">
+      <div className="flex text-center justify-center mb-5 w-full ">
         <SearchBar setSearchChar={setSearchChar} setPage={setPage} />
       </div>
-      <div className="flex flex-column gap-x-8 justify-center items-start px-4 ">
+      <div className="sm:flex  sm:flex-row  sm:gap-x-8  sm:justify-center  sm:items-start px-4">
         <Filter
           setStatus={setStatus}
           setGender={setGender}

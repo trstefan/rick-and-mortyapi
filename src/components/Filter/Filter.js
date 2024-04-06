@@ -10,11 +10,11 @@ const Filter = ({ setStatus, setGender, setSpecies, setPage }) => {
     //console.log("work");
   }
   return (
-    <div className="flex flex-col ">
-      <div className="flex items-center gap-x-5 bg-green-700 p-2 rounded-lg">
+    <div className="flex flex-col   ">
+      <div className="flex items-center gap-x-5 bg-[#F3F4F6] p-2 rounded-lg">
         <p className="font-bold text-lg">Filters</p>
         <button
-          className="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          className="bg-red-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           onClick={clear}
         >
           Clear Filters

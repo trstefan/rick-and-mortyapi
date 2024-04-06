@@ -16,7 +16,7 @@ export const Locations = () => {
     (async function () {
       let data = await fetch(api).then((res) => res.json());
       setInfo(data);
-      console.log(data);
+      //console.log(data);
 
       let mappedChars = await Promise.all(
         data.residents.map((mappedChar) => {
@@ -34,7 +34,7 @@ export const Locations = () => {
         <h1>{info.name}</h1>
         <h3 className="font-medium">{info.dimension}</h3>
       </div>
-      <div className="grid gap-[1rem] sm:grid-cols-[.5fr_1.5fr]">
+      <div className="h-full">
         <InputGroup name="Location" changeID={setNumber} total={126} />
         <CharsGrid chars={results}></CharsGrid>
       </div>

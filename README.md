@@ -1,23 +1,54 @@
 # Rick and Morty App - ReactJS
 
+## 📝 Project Description
+
+This project is a React.js web app that displays details of characters from the Rick and Morty show, details about the episodes and locations of the tv series. It fetches data from the Rick and Morty API and displays it in a user-friendly way.
+
 ## :link: Live Demo
 
 [Demo Link](https://rick-and-mortyapi.vercel.app/)
 
 ## 📷 Screenshot
 
-<p>
-  <img alt="screenshot" width="100%" src="./src/screenshots/Home.png" />
-</p>
+<div>
 
-## 📝 Project Description
+#### Old Home Page
 
-The Rick and Morty project allows users to view the list Rick and Morty characters with their details. Search and filter different types of stats about the characters.
+  <img alt="old home page" width="100%" src="./src/screenshots/Home.png" />
+
+#### New Home Page
+
+  <img alt="new home page" width="100%" src="./src/screenshots/HomeNew.png" />
+</div>
+
+<div>
+
+#### Old Characters Page
+
+  <img alt="old characters page" width="100%" src="./src/screenshots/Characters.png" />
+
+#### New Characters Page
+
+  <img alt="new characters page" width="100%" src="./src/screenshots/CharactersNew.png" />
+</div>
+
+<div>
+
+#### Old Episodes/Location Page
+
+  <img alt="old episodes page" width="100%" src="./src/screenshots/Episodes.png" />
+
+#### New Episodes/Location Page
+
+  <img alt="new episodes page" width="100%" src="./src/screenshots/EpisodesNew.png" />
+</div>
+
+</div>
 
 ## 📚 Technologies
 
 - ReactJS
-- ReactHooks (useState, useEffect)
+- Axios
 - TailwindCSS
 
 ## :compass: Roadmap
@@ -36,13 +67,13 @@ The Rick and Morty project allows users to view the list Rick and Morty characte
 Clone the project
 
 ```bash
-  git clone https://github.com/trstefan/starwars-wiki.git
+  git clone https://github.com/trstefan/rick-and-mortyapi
 ```
 
 Go to the project directory
 
 ```bash
-  cd starwars-wiki
+  cd rick-and-mortyapi
 ```
 
 Install dependencies
